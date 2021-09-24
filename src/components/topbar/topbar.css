@@ -1,8 +1,87 @@
-.topbar{
-   width: 100%;
-   height: 70px;
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  color: #15023a;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.topbar :active{
    background-color: #15023a;
-   position: fixed;
-   top: 0;
-   z-index: 2;
+   color: white;
+}
+
+
+/* left side */
+.wrapper {
+  padding: 10px 30px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 40px;
+}
+
+.itemContainer {
+  display: flex;
+  /* align-items: center; */
+  margin-left: 30px;
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.leftSpan {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+ /* right side */
+.hamburger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 100%;
+  height: 3px;
+  background-color: #15023a;
+  transform-origin: left;
+  transition: all 2s ease;
+} 
+
+.line1:active{
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.line2:active{
+  opacity: 0;
+}
+.line3:active{
+  background-color: white;
+  transform: rotate(-45deg);
 }
