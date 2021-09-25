@@ -5,7 +5,8 @@
   color: #15023a;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
+  transition: all 1s ease;
 }
 
 .topbar :active{
@@ -53,6 +54,12 @@
 
 
  /* right side */
+ .topbar-right {
+  flex: 0.1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .hamburger {
   width: 32px;
   height: 25px;
@@ -62,25 +69,25 @@
   cursor: pointer;
 }
 
-.line1,
-.line2,
-.line3 {
+.line{
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #15023a;
+  border-radius: 20px;
+  transition: transform 1s ease, opacity 0.5s ease;
   transform-origin: left;
-  transition: all 2s ease;
-} 
+}
 
-.line1:active{
+.hamburger:active .line1{
   background-color: white;
   transform: rotate(45deg);
 }
 
-.line2:active{
+.hamburger:active .line2{
   opacity: 0;
 }
-.line3:active{
+.hamburger:active .line3{
   background-color: white;
   transform: rotate(-45deg);
 }
+
