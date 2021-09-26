@@ -9,7 +9,7 @@
   transition: all 1s ease;
 }
 
-.topbar :active{
+.topbar.active{
    background-color: #15023a;
    color: white;
 }
@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 
-.left {
+.topbar-left {
   display: flex;
   align-items: center;
 }
@@ -77,16 +77,55 @@
   transition: transform 1s ease, opacity 0.5s ease;
   transform-origin: left;
 }
+ 
 
-.hamburger:active .line1{
+
+.menu {
+  width: 200px;
+  height: calc(100vh - 50px);
+  background-color: #15023a;
+  position: absolute;
+  top: 50px;
+  right: -250px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  transition: all 1s ease;
+}
+
+.menu-center {
+  flex: 0.8;
+}
+
+.menu-item {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.menu-item span {
+  margin-left: 10px;
+  color: white;
+}
+
+.topbarA{
+  color: white;
+}
+
+.menu.active {
+  transform: translateX(-250px);
+}
+
+
+.hamburger.active .line1{
   background-color: white;
   transform: rotate(45deg);
 }
 
-.hamburger:active .line2{
+.hamburger.active .line2{
   opacity: 0;
 }
-.hamburger:active .line3{
+.hamburger.active .line3{
   background-color: white;
   transform: rotate(-45deg);
 }
