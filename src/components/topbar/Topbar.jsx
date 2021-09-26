@@ -3,6 +3,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import EmailIcon from '@mui/icons-material/Email';
 
 
+ const lineContainer = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+lineContainer.addEventListener("click", () => {
+  lineContainer.classList.toggle("active");
+  menu.classList.toggle("active");
+}); 
 
 
 export default function Topbar() {
@@ -30,7 +37,7 @@ export default function Topbar() {
           </div>
         </div>
 
-        <div className="menu active">
+        <div className="menu">
         <div className="menu-center">
           <div className="menu-item">
             <i className="fas fa-home"></i>

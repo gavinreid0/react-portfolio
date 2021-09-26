@@ -9,7 +9,7 @@
   transition: all 1s ease;
 }
 
-.topbar.active{
+.topbar:active{
    background-color: #15023a;
    color: white;
 }
@@ -101,6 +101,7 @@
 .menu-item {
   margin-top: 20px;
   cursor: pointer;
+  height: auto;
 }
 
 .menu-item span {
@@ -117,15 +118,15 @@
 }
 
 
-.hamburger.active .line1{
+.hamburger:active .line1{
   background-color: white;
   transform: rotate(45deg);
 }
 
-.hamburger.active .line2{
+.hamburger:active .line2{
   opacity: 0;
 }
-.hamburger.active .line3{
+.hamburger:active .line3{
   background-color: white;
   transform: rotate(-45deg);
 }
