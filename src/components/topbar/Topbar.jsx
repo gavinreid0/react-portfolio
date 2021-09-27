@@ -3,14 +3,6 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import EmailIcon from '@mui/icons-material/Email';
 
 
- /* const lineContainer = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
-
-lineContainer.addEventListener("click", () => {
-  lineContainer.classList.toggle("active");
-  menu.classList.toggle("active");
-}); */
-
 export default function Topbar() {
   return (
     <div className="topbar active">
